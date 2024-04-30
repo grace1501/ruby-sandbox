@@ -3,6 +3,6 @@ require "active_support/all"
 require "pry-byebug"
 
 
-str = '[ERROR]: Invalid operation'
-new= str.slice(8, str.length)
-pp new.strip
+str = "[WARNING]:   \tTimezone not set  \r\n"
+new= str.split(":")[1].strip
+pp new
