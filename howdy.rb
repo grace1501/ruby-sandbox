@@ -4,5 +4,7 @@ require "pry-byebug"
 
 
 str = "[WARNING]:   \tTimezone not set  \r\n"
-new= str.split(":")[1].strip
-pp new
+new = /^\[(.+)\]:\s*(.+)/.match(str)
+pp new.class
+pp new[2]
+pp new[2].strip
