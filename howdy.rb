@@ -3,8 +3,6 @@ require "active_support/all"
 require "pry-byebug"
 
 
-
-byebug
-str = "Your number is"
-num = rand(100)
-pp  str + num
+str = '[ERROR]: Invalid operation'
+new= str.slice(8, str.length)
+pp new.strip
